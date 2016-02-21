@@ -1,0 +1,32 @@
+aside .documentation {
+	ol ol {
+		//list-style circle inside none
+		padding-left vr-block(1)
+	}
+	>ol {
+		>li>a {
+			padding-left 20px
+			&:after {
+				content ' '
+				display block
+				width 30%
+				border-bottom 2px solid $DarkBlue//$OrangePeel
+			}
+		}
+		>li {
+			margin-top vr-block(1)
+		}
+	}
+	a {
+		width 100%
+		display block
+		padding vr-block(0.125) vr-block(0.25)
+	}
+	>ol ol a {
+		&:hover {
+			//background #eee
+			text-decoration underline
+		}
+	}
+	
+}

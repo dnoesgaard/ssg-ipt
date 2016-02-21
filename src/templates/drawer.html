@@ -1,0 +1,67 @@
+<nav class="documentation">
+	{% for x in nav.children['1'].children %}
+    {% if loop.first %}
+	<ol>
+	{% endif %}
+		<li>
+			<a href="/{{x.menuItem[meta.siteLanguage].prettyUrl}}">{{x.menuItem[meta.siteLanguage].fm.title}}</a>
+
+
+
+			{% for y in x.children %}
+	    	{% if loop.first %}
+			<ol>
+			{% endif %}
+				<li>
+					<a href="/{{y.menuItem[meta.siteLanguage].prettyUrl}}">{{y.menuItem[meta.siteLanguage].fm.title}}</a>
+
+
+
+					{% for z in y.children %}
+				    {% if loop.first %}
+					<ol>
+					{% endif %}
+						<li>
+							<a href="/{{z.menuItem[meta.siteLanguage].prettyUrl}}">{{z.menuItem[meta.siteLanguage].fm.title}}</a>
+
+
+
+							{% for v in z.children %}
+							{% if loop.first %}
+							<ol>
+							{% endif %}
+								<li>
+									<a href="/{{v.menuItem[meta.siteLanguage].prettyUrl}}">{{v.menuItem[meta.siteLanguage].fm.title}}</a>
+								</li>
+							{% if loop.last %}
+							</ol>
+							{% endif %}
+							{% endfor %}
+
+
+
+						</li>
+					{% if loop.last %}
+					</ol>
+					{% endif %}
+					{% endfor %}
+
+
+
+				</li>
+			{% if loop.last %}
+			</ol>
+			{% endif %}
+			{% endfor %}
+
+
+
+		</li>
+	{% if loop.last %}
+	</ol>
+	{% endif %}
+	{% endfor %}
+</nav>
+<script>
+var navigation = {{nav|raw|json_encode}};
+</script>

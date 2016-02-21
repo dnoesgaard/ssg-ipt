@@ -1,0 +1,25 @@
+.map {
+	height 50vh
+	max-height 50vh
+	margin 0
+}
++isAbove($laptop) {
+	.map {
+		height 50vw
+	}
+}
+.home .block {
+	//Map block
+	&:nth-of-type(5) {
+		margin 0
+		padding 0
+		.block-content {
+			max-width none
+			margin 0
+		}
+	}
+}
+
+.home .Site__contentArea__main {
+    transform translate3d(0, 0, 0) //to avoid scrollbar beneath map. Chrome bug http://stackoverflow.com/questions/16874546/strange-z-index-behavior-with-scrollbars-under-chrome
+}

@@ -1,0 +1,28 @@
+.home .quotes {
+	background #f5f5f5
+	padding vr-block(1)
+	display flex
+	justify-content space-around
+	flex-wrap wrap
+	border-top 1px solid #e5e5e5
+	margin 0
+	blockquote {
+		flex 1 1 auto
+		width 400px
+		max-width 500px
+		border none
+		text-align center
+		margin-bottom vr-block(2)
+	}
+	cite {
+		color gray
+	}
+}
+
++isAbove($laptop) {
+	.home .quotes {
+	blockquote {
+		min-width 200px
+	}
+}
+}
