@@ -1,10 +1,13 @@
 ---
 title: FAQ
 drawer: true
+category: Documentation
 ---
 
 # FAQ
 
+<p class="comment-warning">NB: This page has not been revised</p>
+ 
 ## Table of Contents
 <!-- toc -->
 <!-- tocstop -->

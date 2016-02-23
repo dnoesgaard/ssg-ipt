@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
-    ssgTasks = require('gbif-ssg'); //for production
-    // ssgTasks = require('../ssg/index.js'); //easier when developing the core. For testing only
+    // ssgTasks = require('gbif-ssg'); //for production
+    ssgTasks = require('../ssg/index.js'); //easier when developing the core. For testing only
 
 global.rootRequire = function(name) {
     return require(__dirname + '/' + name);

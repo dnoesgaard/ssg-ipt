@@ -5,7 +5,7 @@ style: home article
 
 # Integrated Publishing Toolkit
 
-The simplest way to backup and publish your biodiversity data
+The simplest way to publish biodiversity data
 
 ----------
 
@@ -27,4 +27,3 @@ templates:
 - path: map_en.html
 ```
 ---------
-

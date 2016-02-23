@@ -1,26 +1,61 @@
 .article.home {
 	.block {
 		&.block-first {
-			background linear-gradient($DustyBlue, $DarkBlue)
-			height 50vh
-			max-height 30rem
+			//background linear-gradient($DustyBlue, $DarkBlue)
+			//background-image url('http://images.unsplash.com/photo-1445285303476-2f3b16d67b7a')
+			background-image url('https://images.unsplash.com/photo-1445299236581-19f5f784480e')
+			background-size cover
+			background-position top
+			height 75vw//"calc(75vh - %s)" % $navbar_height
 			.block-content {
-				margin 3rem 0
+				margin 1rem 0
 				font-weight 200
 				color whitesmoke
 				>h1 {
 					margin 0 auto
 					border none
 					color whitesmoke
+					padding 0
 				}
 				p {
 					text-align center
+					font-weight 300
+					text-shadow 1px 0 1px rgba(0,0,0,0.05)
 				}
 			}
 		}
 		.block-content {
 			margin-left auto
 			margin-right auto
+		}
+	}
+}
+
++isAbove($tablet) {
+	.article.home {
+		.block {
+			&.block-first {
+				height 40vw
+				.block-content {
+					margin-top vr-block(2)
+					h1 {
+						margin-bottom vr-block(1)
+					}
+				}
+			}
+		}
+	}
+}
+
++isAbove($laptop) {
+	.article.home {
+		.block {
+			&.block-first {
+				height 40vw
+				.block-content {
+					margin-top vr-block(3)
+				}
+			}
 		}
 	}
 }
