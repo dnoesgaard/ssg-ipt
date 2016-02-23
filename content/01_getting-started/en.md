@@ -13,5 +13,5 @@ images:
   url: /images/kickoff.jpg
   width: 300
   height: 100
-  license: beate@spam.org
+  link: beate@spam.org
 ```
