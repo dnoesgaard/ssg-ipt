@@ -63,14 +63,9 @@
 
 //hide default menu arrow when not active
 +isAbove($laptop) {
-	.SiteNav >div>ul>li.isCategory {
-		>a:hover:after {
-			display none
-		}
-	}
 	.SiteNav.isExpanded >div>ul>li.isCategory.isExpanded {
-		>a:hover:after {
-			display block
+		>a:after, >a:hover:after {
+			border-bottom-color $navbar_dropdown_bg
 		}
 	}
 }

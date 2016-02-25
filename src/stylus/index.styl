@@ -17,8 +17,83 @@ $DarkBlue = #3373BD //#507A9E// #648DA9//
 @import "main"
 @import "home"
 @import "drawer"
-
+@import "contacts"
 
 .highlight {
 	background yellow
+}
+
+
+.home .hero {
+	margin 0
+	width 100%
+	height 0
+	padding-bottom 50%
+	overflow hidden
+	position relative
+	background linear-gradient(#3373BD, #436FA2)
+	>div {
+		position absolute
+		top 0
+		text-align center
+		width 100%
+		color whitesmoke
+		h1 {
+			border none
+			margin 0
+			margin-top calc(2.5vw)
+			color whitesmoke
+			padding 0
+		}
+		p {
+			font-weight 300
+			text-shadow 1px 0 1px rgba(0,0,0,0.05)
+		}
+	}
+	img {
+		width 150%
+		max-width 150%
+	}
+}
+
++isBetween($tablet, $laptop) {
+	.home .hero>div {
+		h1 {
+			font-size 5vw
+		}
+	}
+}
+
++isAbove($tablet) {
+	.home .hero {
+		padding-bottom 40%
+		> div {
+			h1 {
+				margin-bottom vr-block(0.25)
+				margin-top 1em
+			}
+			p {
+				font-weight 400
+			}
+		}
+		img {
+			width 100%
+			max-width 100%
+		}
+	}
+}
+
++isAbove($laptop) {
+	.home .hero {
+		padding-bottom 30%
+		img {
+			margin-top -100px
+		}
+		> div {
+			h1 {
+				margin-bottom vr-block(0.25)
+				margin-top 1em
+			}
+		}
+	}
 }

@@ -1,0 +1,46 @@
+.home .features {
+	background #51667D
+	.features__container {
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		justify-content center
+		//max-width $article_max_width
+		//margin 0 auto
+	}
+	.feature {
+		border 1px solid #4A5F75
+		flex 1 1 auto
+		width 300px
+		padding-bottom 30px
+	}
+	.feature__container {
+		padding vr-block(1) vr-block(2)
+		color whitesmoke
+		[class^="gb-icon-"] {
+			font-size 3rem
+			line-height 1
+			text-align center
+			margin-bottom vr-block(1)
+		}
+		h2 {
+			margin 0
+		}
+		a {
+			group();
+			float right
+			color #3B4046
+			&:hover {
+				text-decoration underline
+			}
+		}
+	}
+}
+
++isAbove($desktop) {
+	.home .features {
+		.feature {
+			width 30%
+		}
+	}
+}
