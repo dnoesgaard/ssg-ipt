@@ -24,6 +24,13 @@ translationNotAvailable:
 cannotFindInformation:
   en: Cannot find what you are looking for? Feel free to contact us.
 
+# CUSTOM PHRASES
+
+installation:
+  en: installaion
+
+installations: 
+  en: installations
 
 # The format is
 # key:

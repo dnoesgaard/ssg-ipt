@@ -21,6 +21,8 @@
     "tests"
   ],
   "dependencies": {
-    "gbif-ssg": "git://github.com/gbif/ssg.git#615d578cf590e42ebacb53475d5e57b37b3bc5a0"
+    "gbif-ssg": "git://github.com/gbif/ssg.git#0a0748b2943abddd9d03416822743e1837a57a89",
+    "mapbox.js": "2.3.0",
+    "leaflet.markercluster": "0.4.0"
   }
 }

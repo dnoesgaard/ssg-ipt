@@ -1,4 +1,4 @@
-.article.home .block {
+article.home .block {
 	&:nth-of-type(2), &:nth-of-type(5) {
 		text-align center
 		.block-content {
@@ -14,6 +14,21 @@
 		p {
 			font-size 18px
 			color #888
+		}
+	}
+	&:nth-of-type(2) {
+		.block-content {
+			>p>a:first-child {
+				font-transform uppercase
+				color $DustyBlue
+				padding vr-block(1)
+				display inline-block
+				border-bottom none
+				background none
+				&:hover {
+					text-decoration underline
+				}
+			}
 		}
 	}
 }

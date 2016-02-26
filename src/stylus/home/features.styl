@@ -1,5 +1,9 @@
+$featuresBg = #444 //43838//#51667D
+$featureColor = whitesmoke
+$featureBorderColor = darken($featuresBg, 10%) //#4A5F75
+$featureReadMoreColor = lighten($featuresBg, 45%)
 .home .features {
-	background #51667D
+	background $featuresBg
 	.features__container {
 		display flex
 		flex-direction row
@@ -9,14 +13,15 @@
 		//margin 0 auto
 	}
 	.feature {
-		border 1px solid #4A5F75
+		border 1px solid $featureBorderColor
+		border-width 0 1px 1px 0
 		flex 1 1 auto
 		width 300px
 		padding-bottom 30px
 	}
 	.feature__container {
 		padding vr-block(1) vr-block(2)
-		color whitesmoke
+		color $featureColor
 		[class^="gb-icon-"] {
 			font-size 3rem
 			line-height 1
@@ -29,7 +34,7 @@
 		a {
 			group();
 			float right
-			color #3B4046
+			color $featureReadMoreColor
 			&:hover {
 				text-decoration underline
 			}

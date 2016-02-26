@@ -24,7 +24,11 @@
 	});
 
 	//load geojson with markers
-	$.getJSON("//api.gbif.org/v1/installation/location/IPT_INSTALLATION", function(geojson) {
+	var geojsonUrl = $('#map').attr('data-geojson');
+	if (!geojsonUrl) {
+		return;
+	}
+	$.getJSON(geojsonUrl, function(geojson) {
 		var markers = new L.MarkerClusterGroup();
 		markers.addLayer(L.geoJson(geojson, { style: L.mapbox.simplestyle.style }))
 		map.addLayer(markers);

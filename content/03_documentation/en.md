@@ -5,6 +5,11 @@ drawer: true
 
 # Documentation
 
+<p class="comment-warning">NB: This page has not been revised</p>
+
+I guess this is the content we talked about. Maybe there could be a brieft introduction or such. You decide.
+Remember to check links!
+
 Users
 * Quick guide
 * Occurrence Resource Tutorial (step by step)
@@ -41,11 +46,10 @@ Users
 * FAQ
 
 ## Downloads
-intro warning
-link or inline release plan / version history
+Seperate page with info or just direct to download
 
-
-
+## Demo
+Just straight to demo/about instead?
 ## About
 Getting started
 Contact
