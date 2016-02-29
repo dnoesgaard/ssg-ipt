@@ -16,7 +16,7 @@ templates:
 
 The Integrated Publishing Toolkit (IPT) is a free open source software tool that is used to publish and share biodiversity datasets through the GBIF network. 
 
-[Start publishing](/en/about/getting-started/)
+[Start publishing](/en/about/start-publishing/)
 
 
 ----------
