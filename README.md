@@ -3,7 +3,7 @@
 # ssg-IPT
 The IPT should have its own site. But it isn't ready yet. 
 
-For general usage about using the static site see to [example site](ssg.gbif-uat.org).
+For general usage about using the static site see to [example site](http://ssg.gbif-uat.org).
 
 ## Install
 To install dependencies run
